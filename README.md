@@ -1,129 +1,129 @@
 # Piscine Reloaded
 
-Série de exercícios que consolida os conceitos fundamentais de C aprendidos durante a Piscine da 42 — desde shell scripting até ponteiros para funções e leitura de arquivos.
+A series of exercises that consolidates the fundamental C concepts learned during the 42 Piscine — from shell scripting to function pointers and file reading.
 
-**Linguagem:** C / Shell
+**Language:** C / Shell
 
 ---
 
 ## Shell (ex00 – ex05)
 
-Primeiros contatos com scripts de shell.
+First contact with shell scripts.
 
 ---
 
-## Funções Básicas e Condicionais (ex06 – ex08)
+## Basic Functions and Conditionals (ex06 – ex08)
 
-Introdução à escrita de funções em C, uso de loops e estruturas condicionais.
+Introduction to writing functions in C, using loops and conditional structures.
 
-- **ex06 — ft_print_alphabet** — Imprime o alfabeto em minúsculas usando um loop `while`
-- **ex07 — ft_print_numbers** — Imprime os dígitos de 0 a 9 usando um loop `while`
-- **ex08 — ft_is_negative** — Recebe um inteiro e imprime `N` se negativo ou `P` se positivo
-
----
-
-## Ponteiros (ex09 – ex11)
-
-Conceito de ponteiros: acesso e modificação de valores por referência.
-
-- **ex09 — ft_ft** — Atribui o valor `42` a um inteiro via ponteiro
-- **ex10 — ft_swap** — Troca os valores de dois inteiros via ponteiros
-- **ex11 — ft_div_mod** — Calcula divisão e módulo, armazenando os resultados via ponteiros
+- **ex06 — ft_print_alphabet** — Prints the lowercase alphabet using a `while` loop
+- **ex07 — ft_print_numbers** — Prints digits from 0 to 9 using a `while` loop
+- **ex08 — ft_is_negative** — Takes an integer and prints `N` if negative or `P` if positive
 
 ---
 
-## Iteração e Recursão (ex12 – ex14)
+## Pointers (ex09 – ex11)
 
-Comparação entre as duas abordagens para resolver o mesmo problema.
+Concept of pointers: accessing and modifying values by reference.
 
-- **ex12 — ft_iterative_factorial** — Calcula o fatorial de forma iterativa com `while`
-- **ex13 — ft_recursive_factorial** — Calcula o fatorial de forma recursiva
-- **ex14 — ft_sqrt** — Retorna a raiz quadrada inteira de um número (ou 0 se não for exata)
-
----
-
-## Manipulação de Strings (ex15 – ex17)
-
-Funções fundamentais para trabalhar com strings em C.
-
-- **ex15 — ft_putstr** — Imprime uma string caractere por caractere
-- **ex16 — ft_strlen** — Retorna o comprimento de uma string
-- **ex17 — ft_strcmp** — Compara duas strings lexicograficamente, retornando -1, 0 ou 1
+- **ex09 — ft_ft** — Assigns the value `42` to an integer via pointer
+- **ex10 — ft_swap** — Swaps the values of two integers via pointers
+- **ex11 — ft_div_mod** — Calculates division and modulo, storing the results via pointers
 
 ---
 
-## Argumentos da Linha de Comando (ex18 – ex19)
+## Iteration and Recursion (ex12 – ex14)
 
-Uso de `argc` e `argv` para receber e processar argumentos no terminal.
+Comparison between the two approaches to solve the same problem.
 
-- **ex18 — ft_print_params** — Imprime cada argumento passado ao programa em uma linha separada
-- **ex19 — ft_sort_params** — Ordena e imprime os argumentos em ordem lexicográfica (bubble sort)
-
----
-
-## Alocação Dinâmica de Memória (ex20 – ex21)
-
-Uso de `malloc` para alocar memória em tempo de execução.
-
-- **ex20 — ft_strdup** — Duplica uma string alocando memória dinamicamente
-- **ex21 — ft_range** — Cria e retorna um array de inteiros entre `min` e `max`
+- **ex12 — ft_iterative_factorial** — Calculates factorial iteratively using `while`
+- **ex13 — ft_recursive_factorial** — Calculates factorial recursively
+- **ex14 — ft_sqrt** — Returns the integer square root of a number (or 0 if not exact)
 
 ---
 
-## Headers, Macros e Structs (ex22 – ex23)
+## String Manipulation (ex15 – ex17)
 
-Organização do código com arquivos de cabeçalho, macros e tipos personalizados.
+Fundamental functions for working with strings in C.
 
-- **ex22 — ft_abs.h** — Define a macro `ABS(Value)` que retorna o valor absoluto de um número
-- **ex23 — ft_point.h** — Define a struct `t_point` com campos `x` e `y` para representar um ponto 2D
-
----
-
-## Makefile e Compilação (ex24)
-
-Automação da compilação com Makefile e geração de uma biblioteca estática.
-
-- **ex24 — libft** — Cria a biblioteca estática `libft.a` com regras `all`, `clean`, `fclean` e `re`
+- **ex15 — ft_putstr** — Prints a string character by character
+- **ex16 — ft_strlen** — Returns the length of a string
+- **ex17 — ft_strcmp** — Compares two strings lexicographically, returning -1, 0 or 1
 
 ---
 
-## Ponteiros para Funções (ex25 – ex26)
+## Command-Line Arguments (ex18 – ex19)
 
-Funções que recebem outras funções como argumento.
+Using `argc` and `argv` to receive and process arguments in the terminal.
 
-- **ex25 — ft_foreach** — Aplica uma função a cada elemento de um array de inteiros
-- **ex26 — ft_count_if** — Conta quantos elementos de um array de strings satisfazem uma condição
-
----
-
-## I/O de Arquivos (ex27)
-
-Leitura de arquivos usando as syscalls `open`, `read`, `write` e `close`.
-
-- **ex27 — ft_display_file** — Lê e exibe o conteúdo de um arquivo passado como argumento
+- **ex18 — ft_print_params** — Prints each argument passed to the program on a separate line
+- **ex19 — ft_sort_params** — Sorts and prints arguments in lexicographic order (bubble sort)
 
 ---
 
-## Como compilar
+## Dynamic Memory Allocation (ex20 – ex21)
 
-Para exercícios com Makefile (ex24 e ex27):
+Using `malloc` to allocate memory at runtime.
+
+- **ex20 — ft_strdup** — Duplicates a string by dynamically allocating memory
+- **ex21 — ft_range** — Creates and returns an array of integers between `min` and `max`
+
+---
+
+## Headers, Macros and Structs (ex22 – ex23)
+
+Code organisation with header files, macros and custom types.
+
+- **ex22 — ft_abs.h** — Defines the `ABS(Value)` macro that returns the absolute value of a number
+- **ex23 — ft_point.h** — Defines the `t_point` struct with `x` and `y` fields to represent a 2D point
+
+---
+
+## Makefile and Compilation (ex24)
+
+Build automation with Makefile and generation of a static library.
+
+- **ex24 — libft** — Creates the static library `libft.a` with rules `all`, `clean`, `fclean` and `re`
+
+---
+
+## Function Pointers (ex25 – ex26)
+
+Functions that receive other functions as arguments.
+
+- **ex25 — ft_foreach** — Applies a function to each element of an integer array
+- **ex26 — ft_count_if** — Counts how many elements of a string array satisfy a condition
+
+---
+
+## File I/O (ex27)
+
+Reading files using the `open`, `read`, `write` and `close` syscalls.
+
+- **ex27 — ft_display_file** — Reads and displays the content of a file passed as an argument
+
+---
+
+## How to compile
+
+For exercises with Makefile (ex24 and ex27):
 
 ```bash
 cd ex24
-make        # compila e gera libft.a
-make clean  # remove arquivos objeto
-make fclean # remove objetos e a biblioteca
-make re     # recompila tudo do zero
+make        # compiles and generates libft.a
+make clean  # removes object files
+make fclean # removes objects and the library
+make re     # recompiles everything from scratch
 ```
 
-Para exercícios individuais em C:
+For individual C exercises:
 
 ```bash
 gcc -Wall -Wextra -Werror ft_iterative_factorial.c -o factorial
 ./factorial
 ```
 
-Para scripts Shell:
+For Shell scripts:
 
 ```bash
 chmod +x find_sh.sh
